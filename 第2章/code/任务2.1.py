@@ -48,7 +48,7 @@ while True:
     # 接受来自客户端的新连接:
     sock, addr = s.accept()
     # 创建新线程来处理TCP连接:
-    t = threading.Thread(target=tcp args=(sock, addr))
+    t = threading.Thread(target=tcp,args=(sock, addr))
 	t.start()
 
 
